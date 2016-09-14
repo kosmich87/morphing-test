@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!--CUSTOM IMAGEVIEW-->
+    <style name="CustomImageview">
+        <item name="android:layout_margin">@dimen/photo_margin</item>
+        </style>
+
+    <style name="CustomImageview.PhotoMain">
+        <item name="android:layout_width">@dimen/photo_width_big</item>
+        <item name="android:layout_height">@dimen/photo_height_big</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/photo_padding</item>
+    </style>
+
+    <style name="CustomImageview.PhotoMain.Big">
+        <item name="android:layout_width">@dimen/photo_width_very_big</item>
+        <item name="android:layout_height">@dimen/photo_height_very_big</item>
+    </style>
+
+    <style name="CustomImageview.PhotoResult">
+        <item name="android:layout_width">@dimen/photo_width_very_big</item>
+        <item name="android:layout_height">@dimen/photo_height_very_big</item>
+    </style>
+
+    <style name="CustomImageview.PhotoSecond">
+        <item name="android:layout_width">@dimen/photo_width</item>
+        <item name="android:layout_height">@dimen/photo_height</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/photo_padding</item>
+    </style>
+
+    <!--CUSTOM TEXTVIEW-->
+    <style name="CustomTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/photo_margin</item>
+    </style>
+
+    <style name="CustomTextView.Root">
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+    <style name="CustomTextView.Second">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+</resources>
