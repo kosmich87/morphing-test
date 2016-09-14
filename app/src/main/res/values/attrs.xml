@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="CustomImageViewWithCheckbox">
-        <attr name="customImageViewWithCheckboxIconSrc" format="reference"/>
-        <attr name="customImageViewWithCheckboxCheckedIconSrc" format="reference"/>
-        <attr name="customImageViewWithCheckboxNonCheckedIconSrc" format="reference"/>
-    </declare-styleable>
-</resources>
