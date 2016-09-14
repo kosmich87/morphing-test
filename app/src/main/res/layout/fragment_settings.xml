@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fragment_settings_main_image"
+        style="@style/CustomImageview.PhotoResult"
+        android:src="@drawable/main"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/fragment_settings_second_image"
+        style="@style/CustomImageview.PhotoMain.Big"
+        android:alpha="0"
+        android:layout_centerHorizontal="true" />
+
+    <com.kkurtukov.morfing.views.RobotoBoldTextView
+        android:id="@+id/fragment_settings_alpha_title"
+        style="@style/CustomTextView.Second"
+        android:text="@string/second_alpha_title"
+        android:layout_below="@+id/fragment_settings_main_image" />
+
+    <com.kkurtukov.morfing.views.RobotoBoldTextView
+        android:id="@+id/seekbar_min_value"
+        android:text="@string/seekbar_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:textSize="@dimen/small_text_size"
+        android:layout_below="@+id/fragment_settings_alpha_title"/>
+
+    <SeekBar
+        android:id="@+id/fragment_settings_second_image_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_below="@+id/fragment_settings_alpha_title"
+        android:max="100"
+        android:progress="0"
+        android:layout_toRightOf="@+id/seekbar_min_value"
+        android:layout_toLeftOf="@+id/seekbar_max_value" />
+
+    <com.kkurtukov.morfing.views.RobotoBoldTextView
+        android:id="@+id/seekbar_max_value"
+        android:text="@string/seekbar_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:textSize="@dimen/small_text_size"
+        android:layout_below="@+id/fragment_settings_alpha_title"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/count_of_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:inputType="number"
+        android:textSize="@dimen/big_text_size"
+        app:met_floatingLabelTextSize="@dimen/small_text_size"
+        android:layout_below="@+id/fragment_settings_second_image_alpha"
+        app:met_floatingLabelText="@string/count_of_frame"
+        app:met_helperText="@string/count_of_frame_helper"
+        app:met_floatingLabel="highlight"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/time_of_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/big_text_size"
+        app:met_floatingLabelTextSize="@dimen/small_text_size"
+        android:layout_below="@+id/count_of_frame"
+        app:met_floatingLabelText="@string/time_of_animation"
+        app:met_helperText="@string/time_of_animation_helper"
+        app:met_floatingLabel="highlight"
+        />
+
+</RelativeLayout>
